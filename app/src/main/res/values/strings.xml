@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CryptRo</string>
+    <string name="error_request_timeout">Time Out !</string>
+    <string name="too_many_requests">Too Many Requests !</string>
+    <string name="no_internet">No Internet Connection Please Try Again!\n</string>
+    <string name="unknow_error">Something went Wrong! Please Try Again Later .</string>
+    <string name="serialization_error">can not do serialization!</string>
+    <string name="market_cap">Market Cap</string>
+    <string name="price">Price</string>
+    <string name="Change_last_24h">Change Last 24h</string>
+</resources>
