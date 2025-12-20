@@ -5,26 +5,27 @@ import com.robert.cryptro.crypto.data.networking.dto.CoinPriceDto
 import com.robert.cryptro.crypto.domain.Coin
 import com.robert.cryptro.crypto.domain.CoinPrice
 import java.time.Instant
+import java.time.ZoneId
 import java.time.ZoneOffset
 
 fun CoinDto.toCoin(): Coin{
     return Coin(
         id =id,
         name = name,
-        rank = rank,
+        rank = rank.toInt(),
         symbol = symbol,
-        marketCapUsd = marketCapUsd,
-        priceUsd = priceUsd,
-        changePercent24Hr = changePercent24Hr
+        marketCapUsd = marketCapUsd.toDouble(),
+        priceUsd = priceUsd.toDouble(),
+        changePercent24Hr = changePercent24Hr.toDouble()
 
 
     )
 }
 fun CoinPriceDto.toCoinPrice() : CoinPrice{
     return CoinPrice(
-        priceUSD = price,
+        priceUSD = price.toDouble(),
         time = Instant
             .ofEpochMilli(time)
-            .atZone(ZoneOffset.UTC)
+            .atZone(ZoneId.systemDefault())
     )
 }

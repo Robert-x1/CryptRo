@@ -4,6 +4,7 @@ import android.icu.text.NumberFormat
 import androidx.annotation.DrawableRes
 import com.robert.cryptro.crypto.domain.Coin
 import com.robert.cryptro.core.presentation.utils.getDrawableIdForCoin
+import com.robert.cryptro.crypto.presentation.coin_details.DataPoint
 import java.util.Locale
 
 //12131653032013.25
@@ -15,7 +16,8 @@ data class CoinUI(
     val marketCapUsd : DisplayableNumber,
     val priceUsd : DisplayableNumber,
     val changePercent24Hr : DisplayableNumber,
-    @DrawableRes val iconResId: Int
+    @DrawableRes val iconResId: Int,
+    val coinPriceHistory: List<DataPoint> = emptyList()
 )
 
 data class DisplayableNumber(
