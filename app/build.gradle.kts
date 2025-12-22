@@ -125,5 +125,11 @@ dependencies {
 // Kotlinx Serialization Converter for Retrofit
     implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
 
+    //adaptive
+        implementation("androidx.compose.material3.adaptive:adaptive:1.3.0-alpha05")
+        implementation("androidx.compose.material3.adaptive:adaptive-layout:1.3.0-alpha05")
+        implementation("androidx.compose.material3.adaptive:adaptive-navigation:1.3.0-alpha05")
+
+
 
 }
