@@ -1,6 +1,7 @@
 package com.robert.cryptro.core.navigation
 
 import android.widget.Toast
+import androidx.activity.compose.BackHandler
 import androidx.compose.material3.adaptive.ExperimentalMaterial3AdaptiveApi
 import androidx.compose.material3.adaptive.layout.AnimatedPane
 import androidx.compose.material3.adaptive.layout.ListDetailPaneScaffoldRole
@@ -32,6 +33,12 @@ fun AdaptiveCoinListDetailPane(
     val context = LocalContext.current
     val navigator = rememberListDetailPaneScaffoldNavigator<Any>()
     val scope = rememberCoroutineScope()
+
+    BackHandler(enabled = navigator.canNavigateBack()) {
+        scope.launch {
+            navigator.navigateBack()
+        }
+    }
 
     ObserveAsEvents(events = viewModel.events) { event ->
         when (event) {
@@ -76,4 +83,5 @@ fun AdaptiveCoinListDetailPane(
         },
         modifier = modifier
     )
+
 }

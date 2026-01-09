@@ -15,7 +15,9 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 import androidx.compose.material3.Icon
+import androidx.compose.material3.LoadingIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -44,6 +46,7 @@ import com.robert.cryptro.crypto.presentation.models.toDisplayableNumber
 import com.robert.cryptro.ui.theme.CryptRoTheme
 import com.robert.cryptro.ui.theme.primaryContainerLightHighContrast
 
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun CoinDetailsScreen(
     state: CoinListState,
@@ -58,7 +61,7 @@ fun CoinDetailsScreen(
                 .background(MaterialTheme.colorScheme.background),
             contentAlignment = Alignment.Center
         ) {
-            CircularProgressIndicator()
+            LoadingIndicator( modifier = Modifier.size(120.dp))
         }
 
     } else if (state.selectedCoin != null) {

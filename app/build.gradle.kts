@@ -82,7 +82,7 @@ dependencies {
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
-    implementation(libs.androidx.compose.material3)
+    implementation("androidx.compose.material3:material3:1.5.0-alpha09")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -126,10 +126,11 @@ dependencies {
     implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
 
     //adaptive
-        implementation("androidx.compose.material3.adaptive:adaptive:1.3.0-alpha05")
-        implementation("androidx.compose.material3.adaptive:adaptive-layout:1.3.0-alpha05")
-        implementation("androidx.compose.material3.adaptive:adaptive-navigation:1.3.0-alpha05")
-
+    implementation("androidx.compose.material3.adaptive:adaptive:1.3.0-alpha05")
+    implementation("androidx.compose.material3.adaptive:adaptive-layout:1.3.0-alpha05")
+    implementation("androidx.compose.material3.adaptive:adaptive-navigation:1.3.0-alpha05")
+    //splashscreen
+    implementation("androidx.core:core-splashscreen:1.2.0")
 
 
 }
