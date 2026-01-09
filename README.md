@@ -1,7 +1,7 @@
 # 🪙 CryptRo - Ultimate Cryptocurrency Tracker & Portfolio
 
 <div align="center">
-  <img src="https://i.postimg.cc/DZXncnYQ/cryptro_jpg.jpg" alt="CryptRo Logo" width="800" height="800" style="border-radius: 40px; box-shadow: 0px 0px 20px rgba(0, 241, 94, 0.5);">
+  <img src="https://i.postimg.cc/DZXncnYQ/cryptro_jpg.jpg" alt="CryptRo Logo" width="1080" height="1080" style="border-radius: 40px; box-shadow: 0px 0px 20px rgba(0, 241, 94, 0.5);">
   <br><br>
   <h3><b>CryptRo</b> is a cutting-edge Android application designed to track real-time cryptocurrency prices, analyze market trends, and manage your portfolio effortlessly.</h3>
 </div>
@@ -27,9 +27,9 @@ Built with **Kotlin** and **Jetpack Compose**, it leverages the power of **CoinG
 
 ## 📸 Screenshots
 
-| Market (Home) | Coin Details | Portfolio | Tablet View (Adaptive) |
-|:---------:|:-------------:|:------------:|:---------:|
-| <img src="URL_TO_IMAGE_1" width="200"/> | <img src="URL_TO_IMAGE_2" width="200"/> | <img src="URL_TO_IMAGE_3" width="200"/> | <img src="URL_TO_IMAGE_4" width="300"/> |
+| Coins  (Home) | Market Details | Tablet View (Adaptive) |
+|:---------:|:-------------:|:---------:|
+| <img src="https://i.postimg.cc/kGP91zk0/Screenshot_20260105_181040.png" width="200"/> | <img src="https://i.postimg.cc/6qxwjgk3/Screenshot_20260105_181057.png" width="200"/> | <img src="https://i.postimg.cc/cHn0c05j/Screenshot_20260104_161111.png" width="300"/> |
 
 ## 🛠️ Tech Stack & Libraries
 
