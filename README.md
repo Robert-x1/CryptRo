@@ -29,14 +29,14 @@ Built with **Kotlin** and **Jetpack Compose**, it leverages the power of **CoinG
 
 | Coins  (Home) | Market Details | Tablet View (Adaptive) |
 |:---------:|:-------------:|:---------:|
-| <img src="https://i.postimg.cc/kGP91zk0/Screenshot_20260105_181040.png" width="200"/> | <img src="https://i.postimg.cc/6qxwjgk3/Screenshot_20260105_181057.png" width="200"/> | <img src="https://i.postimg.cc/cHn0c05j/Screenshot_20260104_161111.png" width="300"/> |
+| <img src="https://i.postimg.cc/kGP91zk0/Screenshot_20260105_181040.png" width="200"/> | <img src="https://i.postimg.cc/6qxwjgk3/Screenshot_20260105_181057.png" width="200"/> | <img src="https://i.postimg.cc/mgWSVwp4/Tablet.png" width="300"/> |
 
 ## 🛠️ Tech Stack & Libraries
 
 * **Language:** [Kotlin](https://kotlinlang.org/) (100%)
 * **UI Framework:** [Jetpack Compose](https://developer.android.com/jetpack/compose) (Material 3)
 * **Architecture:** Clean Architecture (Data, Domain, Presentation) + MVVM.
-* **Dependency Injection:** [Dagger Hilt](https://dagger.dev/hilt/).
+* **Dependency Injection:** [Koin](https://insert-koin.io/) - A pragmatic lightweight dependency injection framework for Kotlin.
 * **Network:** [Retrofit](https://square.github.io/retrofit/) + [OkHttp](https://square.github.io/okhttp/).
 * **Serialization:** [Kotlinx Serialization](https://github.com/Kotlin/kotlinx.serialization).
 * **Local Database:** [Room](https://developer.android.com/training/data-storage/room).
@@ -58,7 +58,7 @@ The app follows the **Clean Architecture** guidelines:
 ```text
 com.robert.cryptro
 ├── core          # Core components (Base Classes, Constants, Utils)
-├── di            # Hilt Modules (Network, Database, Repository Bindings)
+├── di            # Koin Modules (AppModule, NetworkModule, RepositoryModule)
 ├── crypto        # Feature Module (Coins & Market)
 │   ├── data      # API, DTOs, Mappers, Repository Impl 
 │   ├── domain    # Models, Repository Interfaces, UseCases 
